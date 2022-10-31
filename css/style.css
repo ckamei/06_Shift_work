@@ -1,0 +1,81 @@
+[v-cloak] {
+  display: none;
+}
+
+#app {
+  text-align: center;
+  width: 1200px;
+  margin: auto;
+}
+
+#app h1 {
+  color: #019267;
+}
+
+#app span {
+  padding: 0 10px;
+}
+
+table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  color: #7b5e5e;
+  font-weight: bold;
+}
+
+table tr {
+  border-bottom: 3px solid #008a68;
+}
+
+table th {
+  width: 180px;
+  padding: 10px;
+  background: #019267;
+  border: solid 1px #00C897;
+  color: #ffffff;
+}
+
+table td:nth-of-type(1) {
+  width: 100px;
+}
+
+table td:nth-of-type(2) {
+  width: 60px;
+}
+
+
+table td {
+  width: 180px;
+  padding: 10px;
+  border: solid 1px #d4d4d4;
+}
+
+table td:first-child {
+  background: #ffd876;
+}
+
+.btn--yellow {
+  color: #000;
+  background-color: #fff100;
+}
+
+.btn {
+  margin-top: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+}
+
+
+.grey-bg {
+  background-color: #ccc;
+}

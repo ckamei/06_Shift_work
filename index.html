@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta td="viewport" content="width=device-width, initial-scale=1.0">
+        <title>飲食店バイトのシフト表自動作成</title>
+        <meta td="description" content="Title">
+        <link rel="stylesheet" href="css/style.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app">
+            <h1><i class="fa fa-user" aria-hidden="true"></i></i><span>シフト表</span><i class="fa fa-user" aria-hidden="true"></i></i></h1>
+            <table class="table" cellpadding="5" >
+                <tr>
+                    <th colspan="2"></th>
+                    <th>出勤メンバー１</th>
+                    <th>出勤メンバー２</th>
+                    <th>出勤メンバー３</th>
+                    <th>出勤メンバー４</th>
+                    <th>出勤メンバー５</th>
+                    <th>出勤メンバー６</th>
+                </tr>
+                <tr>
+                    <td>1月1日</td>
+                    <td>月</td>
+                    <td v-for="item01 in week_arr.sliceMembers01">{{ item01 }}</td>
+                </tr>
+                <tr>
+                    <td>1月2日</td>
+                    <td>火</td>
+                    <td v-for="item02 in week_arr.sliceMembers02">{{ item02 }}</td>
+                </tr>
+                <tr>
+                    <td>1月3日</td>
+                    <td>水</td>
+                    <td v-for="item03 in week_arr.sliceMembers03">{{ item03 }}</td>
+                </tr>
+                <tr>
+                    <td>1月4日</td>
+                    <td>木</td>
+                    <td v-for="item04 in week_arr.sliceMembers04">{{ item04 }}</td>
+                </tr>
+                <tr>
+                    <td>1月5日</td>
+                    <td>金</td>
+                    <td v-for="item05 in week_arr.sliceMembers05">{{ item05 }}</td>
+                </tr>
+                <tr class="grey-bg">
+                    <td>1月6日</td>
+                    <td>土</td>
+                    <td v-for="item99 in holiday">{{ item99 }}</td>
+                </tr>
+                <tr class="grey-bg">
+                    <td>1月7日</td>
+                    <td>日</td>
+                    <td v-for="item99 in holiday">{{ item99 }}</td>
+                </tr>
+                <tr>
+                    <td>1月8日</td>
+                    <td>月</td>
+                    <td v-for="item06 in week_arr.sliceMembers11">{{ item06 }}</td>
+                </tr>
+                <tr>
+                    <td>1月9日</td>
+                    <td>火</td>
+                    <td v-for="item07 in week_arr.sliceMembers12">{{ item07 }}</td>
+                </tr>
+                <tr>
+                    <td>1月10日</td>
+                    <td>水</td>
+                    <td v-for="item08 in week_arr.sliceMembers13">{{ item08 }}</td>
+                </tr>
+                <tr>
+                    <td>1月11日</td>
+                    <td>木</td>
+                    <td v-for="item09 in week_arr.sliceMembers14">{{ item09 }}</td>
+                </tr>
+                <tr>
+                    <td>1月12日</td>
+                    <td>金</td>
+                    <td v-for="item10 in week_arr.sliceMembers15">{{ item10 }}</td>
+                </tr>
+                <tr class="grey-bg">
+                    <td>1月13日</td>
+                    <td>土</td>
+                    <td v-for="item99 in holiday">{{ item99 }}</td>
+                </tr>
+                <tr class="grey-bg">
+                    <td>1月14日</td>
+                    <td>日</td>
+                    <td v-for="item99 in holiday">{{ item99 }}</td>
+                </tr>
+                <tr>
+                    <td>1月15日</td>
+                    <td>月</td>
+                    <td v-for="item11 in week_arr.sliceMembers21">{{ item11 }}</td>
+                </tr>
+                <tr>
+                    <td>1月16日</td>
+                    <td>火</td>
+                    <td v-for="item12 in week_arr.sliceMembers22">{{ item12 }}</td>
+                </tr>
+                <tr>
+                    <td>1月17日</td>
+                    <td>水</td>
+                    <td v-for="item13 in week_arr.sliceMembers23">{{ item13 }}</td>
+                </tr>
+                <tr>
+                    <td>1月18日</td>
+                    <td>木</td>
+                    <td v-for="item14 in week_arr.sliceMembers24">{{ item14 }}</td>
+                </tr>
+                <tr>
+                    <td>1月19日</td>
+                    <td>金</td>
+                    <td v-for="item15 in week_arr.sliceMembers25">{{ item15 }}</td>
+                </tr>
+                <tr class="grey-bg">
+                    <td>1月20日</td>
+                    <td>土</td>
+                    <td v-for="item99 in holiday">{{ item99 }}</td>
+                </tr>
+                <tr class="grey-bg">
+                    <td>1月21日</td>
+                    <td>日</td>
+                    <td v-for="item99 in holiday">{{ item99 }}</td>
+                </tr>
+                <tr>
+                    <td>1月22日</td>
+                    <td>月</td>
+                    <td v-for="item16 in week_arr.sliceMembers31">{{ item16 }}</td>
+                </tr>
+                <tr>
+                    <td>1月23日</td>
+                    <td>火</td>
+                    <td v-for="item17 in week_arr.sliceMembers32">{{ item17 }}</td>
+                </tr>
+                <tr>
+                    <td>1月24日</td>
+                    <td>水</td>
+                    <td v-for="item18 in week_arr.sliceMembers33">{{ item18 }}</td>
+                </tr>
+                <tr>
+                    <td>1月25日</td>
+                    <td>木</td>
+                    <td v-for="item19 in week_arr.sliceMembers34">{{ item19 }}</td>
+                </tr>
+                <tr>
+                    <td>1月26日</td>
+                    <td>金</td>
+                    <td v-for="item20 in week_arr.sliceMembers35">{{ item20 }}</td>
+                </tr>
+                <tr class="grey-bg">
+                    <td>1月27日</td>
+                    <td>土</td>
+                    <td v-for="item99 in holiday">{{ item99 }}</td>
+                </tr>
+                <tr class="grey-bg">
+                    <td>1月28日</td>
+                    <td>日</td>
+                    <td v-for="item99 in holiday">{{ item99 }}</td>
+                </tr>
+            </table>
+            <button class="btn btn--yellow" v-on:click="btnClick"> 作成 </button>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+        <script src="js/main.js"></script>
+</body>
+</html>
